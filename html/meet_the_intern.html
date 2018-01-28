@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MTN Intern Diaries</title>
+    <link href="../css/IP.css" rel="stylesheet" type="text/css">
+     <script src="../jquery-3.2.1.js"></script>
+</head>
+<body>
+<!--banner start-->
+<header>
+    <div class="headerTyp2">
+        <h2>Meet The Intern</h2>
+        <p class="quote">"Care more than others think wise. Dream more than others think practical. Risk more than others think safe.
+Expect more than others think possible.”</p>
+        <p class="quote" style="margin-left: 21.5%"> - Howard Schultz</p>
+    </div>   
+    <div class="sideNav" id="sideNav1">
+        <a href="Homepage.html" id="home">Home</a>
+        <a href="AboutMTN.html" id="MTN">About MTN</a>
+        <a href="Reflections.html" id="reflections">Reflections</a>
+    </div>
+</header>
+<main class="main2"> 
+    <div class="contentDiv" id="contentDiv1">
+    </div>
+        <div class="subDiv" id="subDiv1">
+             <h3>About Me</h3>
+            <img src="../css/images/Intern.jpg" alt="Thembeka Manana" id="internImg"><br/>
+            <p>Age: 21</p><br/>
+            <p>Gender: Female</p><br/>
+            <p>Nationality: Swazi</p><br/>
+            <p>Favourite Season: Winter</p><br/>
+            <p>Hobbies: Reading, Singing, Baking</p>
+            <button class="rightButton" id="rightBut3" onclick="nextDiv()">&#10095;</button>
+        </div>
+        <div class="subDiv" id="subDiv2">
+           <h3>About Me</h3>
+            <p>I am a 2nd year BSc undergraduate, majoring in Computing at the African Leadership College (ALC), Mauritius campus. I’m passionate about music and writing and love seeing people do what they love and helping others work towards doing the same.
+            </p><br/>
+            <p>My main focus of study is in Programming, Databases and Web Design. Upon graduation I hope to utilise these programmes dynamically to create human-centred designed products and services for music education in Africa. More specifically, I wish to do this by creating accessible learning platforms centred on music theory, music technology and voice production for students of varied ages.</p><br/>
+            <button class="leftButton" id="leftBut2"  onclick="previousDiv()">&#10094;</button>
+        </div>
+    <div class="subDiv" id="subDiv3b">
+            <h3>The Job</h3>
+            <p>Generally, an intern at MTN Swaziland is expected to learn more than one aspect of the company during their time spent at work. Hence, the existence of a rotational system. I had the opportunity to work in the Marketing Department for the first half of my internship and in the IT Department for the second.
+            </p><br/>
+            <p>My daily tasks in the Marketing Department included compiling documents, communicating with customers, testing products, troubleshooting with MTN vendors and generally understudying members of my team. Additional projects I was involved in during this time were the Esicojeni End of Hunger Walk and the MTN Apps Challenge. Both of these required communication skills and project management as they involved direct communication with MTN customers and partnering companies.
+            </p>
+            <button class="rightButton" id="rightBut3" onclick="nextDiv3()">&#10095;</button>
+        </div>
+        <div class="subDiv" id="subDiv3c">
+            <h3>The Job</h3>
+            <p>In the IT Department my daily task was to shadow individuals for 2-3 days each, learning the systems that they work with and how they troubleshoot user problems. Additional task included doing Integration and Synchronization using a Retail Management System (RMS) every morning.
+            </p><br/>
+          <button class="leftButton" id="leftBut2"  onclick="previousDiv3()">&#10094;</button>
+        </div>
+    <div class="subDiv" id="subDiv4">
+            <h3>Dear Future Intern</h3>
+            <p>People are willing to help you learn, but you won’t know unless you ask. Be proactive
+about your learning. E.g. Ask to shadow individuals for a couple of days to learn more
+about what they do.
+            </p><br/>
+            <p>Everything is part of the internship. Take nothing to heart; adopt a learner’s mindset,
+asking effective questions always. Don’t be picky about what you want to learn, or
+else you’ll never know the things you don’t. Learn all that you are given to learn.</p><br/>
+        <p>When people let you in, get in! Don’t be picky about people. Not everyone has to be your friend, but everyone is
+someone to be friendly with.</p><br/>
+          <p>It’s the little things - Greet in the morning. Smile when you greet. Ask genuine
+        questions about the wellbeing of others.</p><br/>
+        <p>Take on every day believing it will be a good one, regardless of the day’s tasks (or
+        lack thereof 0_0)</p>      
+        </div>
+<!--    </div>-->
+<button class="roundBtn" id="round4" onclick="hideQuote(); showPersonalContent()">Personal Introduction</button>
+<button class="roundBtn" id="round5" onclick="hideQuote(); showJobContent()">The Job</button>
+<button class="roundBtn" id="round6" onclick="hideQuote(); showFutureContent()">Dear Future Intern</button>
+<script src="../meetTheInt.js"></script>
+</main>
+<address>
+</address>
+</body>
+</html>
