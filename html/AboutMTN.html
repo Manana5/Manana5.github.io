@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MTN Intern Diaries</title>
+    <link href="../css/IP.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/magnific.css">
+	<link rel="stylesheet" href="../css/style.css">
+    <script src="../jquery.min.js"></script>
+    <script src="../instafeed.min.js"></script>
+    <script src="../magnific.min.js"></script>
+    <script src="../custom.js"></script>
+    
+</head>
+<body>
+<!--banner start-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVcSNnmnzAvWTFndTVGAJtCLlNMZ6iETc&callback=initMap">
+   </script>
+    <div class="headerTyp2" id="headerMTN">
+        <h2 id="aboutMTNHeader">About MTN</h2>
+    </div>   
+    <div class="sideNav" id="sideNav1">
+        <a href="Homepage.html" id="home">Home</a>
+        <a href="meet_the_intern.html" id="MTN">The Intern</a>
+        <a href="Reflections.html" id="reflections">Reflections</a>
+    </div>
+</header>
+<main class="main2"> 
+    <div class="contentDiv" id="contentDiv2"></div>
+    <div class="contentDiv short" id="contentDiv3"></div>
+        <div class="aboutMTNImg" id="scroll">
+            <div class="text" id="historyRound" onclick="shift(); showHistory()" >History</div>
+      </div>
+    <div class="contentDiv short" id="contentDiv4"></div>
+    <div class="aboutMTNImg" id="location">
+            <div class="text" onclick="shift(); showLocation()">Location</div>
+      </div>
+    <div class="contentDiv short" id="contentDiv5"></div>
+         <div class="aboutMTNImg" id="circle">
+            <div class="text" onclick="shift(); showSize()">Size</div>
+      </div>
+    <div class="contentDiv short" id="contentDiv6"></div>
+       <div class="aboutMTNImg" id="projects">
+            <div class="text" onclick="shift(); showProjects(); carousel()">Projects</div>
+      </div>
+    <div class="contentDiv short" id="contentDiv7"></div>
+     <div class="aboutMTNImg" id="products">
+            <div class="text" onclick="shift(); showProducts()"></div>
+      </div>
+    <div class="contentDiv short" id="contentDiv8"></div>
+      <div class="aboutMTNImg" id="contact">
+            <div class="text" onclick="shift(); showContacts()">Know More</div>
+      </div>
+        <div class="subDivMTN" id="subDiv5">
+<!--        <h3>History</h3> -->
+            <!--Content from MTN's LinkedIn profile & Ide.go.jp     -->
+            <p>Launched in 1994, the MTN Group Limited (MTN Group) is a multinational telecommunications group, with its core operations in 21 countries in Africa and the Middle East. As at the end of December 2008 MTN recorded more than 90 700 000 subscribers.</p><br>
+           <p>MTN Swaziland LTD is a subsidiary of the MTN Group and started operating in September 1998. Since its inception, MTN Swaziland has developed to become one of Swaziland's most successful and prominent businesses.</p><br>
+            <p>By October 2013, it had 810 000 subscribers. The geographical network coverage was last measured at 96% and population coverage is at 98%. The network is currently available on 2G, 3G & 4G. </p><br>
+            <button class="rightButton" id="rightBut2" style="margin-top: 0px" onclick="nextDiv()">&#10095;</button>
+        </div>
+        <div class="subDivMTN" id="subDiv6">
+<!--        <h3>History</h3>    -->
+<!--        Content from MTN's LinkedIn profile & Ide.go.jp     -->
+            <p>The cellular network covers over 70% of the geographical area, including all major business centres, as well as continuous coverage from the Ngwenya border, along the Mbabane-Manzini highway and on to the Mozambique border.
+            </p><br/>
+            <p>Vision</p>
+            <p>To lead the delivery of a bold, new digital world to their customers</p><br/>
+              <p>Mission</p>
+            <p>To make their customers’ lives a whole lot brighter!</p><br/>
+             <p>Values</p>
+            <p>Leadership | Innovation | Relationships | Integrity | Can-Do</p><br/>
+            <button class="leftButton" id="leftBut2" style="margin-top: 0px; margin-left: 25%" onclick="previousDiv()">&#10094;</button>
+        </div>
+    <div class="subDivMTN" id="subDiv7">
+ <!--       <h3>Location</h3>-->
+        <div id="map" style="width:80%;height:300px"></div>
+
+<!--
+           <div id="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.29794828553!2d31.175118614781343!3d-26.413859978943968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8cb5ddc8a145d%3A0x36e579c8676519f4!2sMTN+Swaziland+HQ!5e0!3m2!1sen!2s!4v1515071238990" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>         
+    </div>	
+-->
+            <ul>
+               <li class="locationLi">o	(Mbn) Take Mantsholo St and Gwamile Street to Mhlambanyatsi Rd/MR19</li>
+			   <li class="locationLi">o	Drive from MR3 and MR103 to Lobamba</li>
+			   <li class="locationLi">o	Drive to your destination</li>
+		  </ul>
+             <ul>
+               <li class="locationLi">o	(Mnz) Follow MR9 and MR3 to Lobamba</li>
+			   <li class="locationLi">o	Drive to your Destination</li>
+		  </ul>
+        </div>
+    <div class="subDivMTN" id="subDiv8">
+<!--        <h3>Size</h3>-->
+         <div class="sizeImgDiv">
+	  <img src="../css/images/900%20000.jpg" alt="Subscribers" class="sizeIMG"></div>
+        <p class="sizeContent">+900 000 Subscribers</p>
+        <p class="sizeContent"  style="font-size: 22px"> Of the country's population of just over 1.2M</p>
+            <button class="rightButton" id="rightSizeBtn" onclick="nextDivSiz()">&#10095;</button>
+         </div>
+  <div class="subDivMTN" id="subDiv8a">  
+<!--        <h3>Size</h3>-->
+  <div class="sizeImgDiv">
+	 <img src="../css/images/Staff.jpg" alt="Staff" class="sizeIMG">
+    </div>	
+     <p class="sizeContent">250 Employees</p>
+      <p class="sizeContent"  style="font-size: 22px"> Working towards a profit of 1 Billion a year</p>
+    <button class="rightButton" id="rightSizeBtn1" onclick="nextDivSiz1()">&#10095;</button>
+        </div>
+ <div class="subDivMTN" id="subDiv8b">
+     <!-- <h3>Size</h3>-->
+    <div class="sizeImgDiv">
+	 <img src="../css/images/SwaziMap.jpg" alt="Coverage" class="sizeIMG" style="width: 65%; margin-left: 18%">
+    </div>	
+            <p class="sizeContent">+80 Coverage</p>
+        <p class="sizeContent"  style="font-size: 22px"> Staying true to its slogan: Everywhere You Go!</p>
+ <button class="rightButton" id="rightSizeBtn2"  onclick="nextDivSiz2()">&#10095;</button>
+        </div>
+        <div class="subDivMTN" id="subDiv9" style="width: 53%; margin-left: 38%">
+<!--        <h3>Projects</h3>-->
+            <div class="projBlocks">
+            <img src="../css/images/Yello%20Care.jpg" alt="21 Days of Y'ello Care" id="firstProjImg">
+            </div>
+            <div class="projBlocks"><p class="projContent">21 Days of Yello Care is MTN Group's largest CSI project where each operating country (OpCo) is required to use 21 days of a month to engage in community service. They are incentivised  by awards and cash rewards for excellence, amongst other criteria.</p></div> 
+            <div class="projBlocks"><p>2017 proved a very awarding year for MTN Swaziland. By coming first place, through out all 27 OpCos, the company won a grand price of $100 000 and a beautiful trophy. In other years, Swazi MTN has received 2nd place in the South-Eastern region.</p></div>
+            <div class="projBlocks" style="margin-top: 18px">
+            <img src="../css/images/Yellow%20Care.jpg" alt="21 Days of Y'ello Care" class="projIMG">
+            <img src="../css/images/Employees.jpg" alt="21 Days of Y'ello Care" class="projIMG">
+             <img src="../css/images/900000.jpg" alt="21 Days of Y'ello Care" class="projIMG"></div>
+             
+        </div>
+     <div class="subDivMTN" id="subDiv10">
+<!--        <h3>Products & Services</h3>-->
+            <div class="yellow_vertical_strip" id="yellowStrip1"></div>
+         <div class="yellow_vertical_strip" id="yellowStrip2"></div>
+         <div class="yellow_vertical_strip" id="yellowStrip3"></div>
+         <div class="yellow_vertical_strip" id="yellowStrip4"></div>
+         <div class="yellow_vertical_strip" id="yellowStrip5"></div>
+         <div class="serviceContainers" id="serviceContainer1"><p class="serviceContent">MTN Packages<em> made up of a variation of MTN’s three core products – Data, Voice & SMS</em> </p></div>
+         <div class="serviceContainers" id="serviceContainer2"><p class="serviceContent">Value Added Services <em>such as Facebook USSD, XtraTime, MTNPlay & CallerTunez</em></p></div>
+           <div class="serviceContainers" id="serviceContainer5"><p class="serviceContent">Internet Services <em>via mobile phone or modems using data bundles. Also included in combo packages</em></p></div>
+           <div class="serviceContainers" id="serviceContainer3"><p class="serviceContent">Corporate Solutions<em> such as MTN Cloud. Used mainly by Small & Medium Enterprises</em></p></div>
+           <div class="serviceContainers" id="serviceContainer4"><p class="serviceContent">Mobile Money<em> allows one to save, send or receive money using their mobile phone. Used on both feature phones and smartphones.</em></p></div>
+             <button class="rightButton" id="rightProdBtn" onclick="nextDivProd()">&#10095;</button>
+    </div>
+        <div class ="subDivMTN" id="subDiv10b">
+            <h3 class="contentHeading3">Price Plans</h3>
+            <div class ="yellow_vertical_strip" id="yellowStrip6"></div>
+            <div id="product_IMG_container">
+            <img src="../css/images/Pulse.jpg" alt="MTN Pulse" class="prodIMG" id="prodIMG_1">
+            <img src="../css/images/Zone.jpg" alt="MTN Pulse" class="prodIMG" id="prodIMG_2">
+            <img src="../css/images/PayPerSec.png" alt="MTN Pay/Sec & Zone" class="prodIMG" id="prodIMG_3">
+        </div>
+            <div id="product_IMG_content">
+            <p class="product_descriptions" id="prodDescr1">A package built to cater for the youth of Swaziland with affordable prices for students and young adults below the age of 36</p>
+            <p class="product_descriptions" id="prodDescr2">The standard package for a prepaid user with the occassional discount given at varying percentages up to 90%</p>
+            <p class="product_descriptions" id="prodDescr3">MTN's Pay per Second allows the customer to pay for calls as per second.</p></div>
+        <button class="rightButton" id="rightProdBtn" onclick="previousDivProd()">&#10094;</button>
+    </div>
+        <div class="subDivMTN" id="subDiv11">
+<!--        <h3>Find More</h3>-->
+            <div id="twitFeed">
+                <a class="twitter-timeline" data-width="400" data-height="480" data-theme="dark" href="https://twitter.com/MTNSwaziland?ref_src=twsrc%5Etfw">Tweets by MTNSwaziland</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  <button class="rightButton" id="rightTwitBtn" onclick="nextDivTwit()">&#10095;</button>
+            </div>
+    </div>
+    <div class="subDivMTN" id="subDivInsta">
+     <div class="container-fluid">
+
+	<div id="instafeed" class="row gallery" style="overflow: scroll; height: 460px"></div>
+<button class="rightButton" id="rightInstaBtn" onclick="nextDivInsta()" style="margin-top: 47%; ">&#10095;</button>
+</div>
+    </div>
+    <div class="subDivMTN" id="facebookFeed">
+        <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*var disqus_config = function () {
+this.page.url = 'www.mtn-intern-diaries.000webhostapp.com';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 'my-intern-diary'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+    */
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://my-intern-diary.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+<!--     <div class="fb-page" data-href="https://www.facebook.com/MTNSz/" data-tabs="timeline" data-width="400" data-height="480" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MTNSz/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MTNSz/">MTN Swaziland</a></blockquote></div>-->
+        <button class="rightButton" id="rightFaceBtn" onclick="nextDivFace()">&#10095;</button>
+    </div>
+</main>
+       <script src="../aboutMTN.js"></script>
+    <script id="dsq-count-scr" src="//my-intern-diary.disqus.com/count.js" async></script>
+     </body>
+</html>
